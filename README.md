@@ -22,11 +22,11 @@ Untuk saat ini, kira-kira gambaran umum untuk <i>template</i> ini seperti di ata
 
 Informasi Template
 ------------------
-Nama <i>template</i> "<strong></strong><i><strong>Read First</strong></i>".
-Status pengembangan <strong>berjalan</strong>.
-Halaman yang rampung 100% <strong>belum ada</strong>.
-Saat ini tengah mengerjakan <strong>halaman utama</strong>.
-Optimasi <strong>belum dilakukan</strong>.
-Interaktif dan responsif <strong>belum sempurna</strong>.
-Versi <i>template</i> <strong>belum ada</strong>.
-Rilis terakhir <strong>belum dilakukan</strong>.
+- Nama <i>template</i> "<strong></strong><i><strong>Read First</strong></i>".
+- Status pengembangan <strong>berjalan</strong>.
+- Halaman yang rampung 100% <strong>belum ada</strong>.
+- Saat ini tengah mengerjakan <strong>halaman utama</strong>.
+- Optimasi <strong>belum dilakukan</strong>.
+- Interaktif dan responsif <strong>belum sempurna</strong>.
+- Versi <i>template</i> <strong>belum ada</strong>.
+- Rilis terakhir <strong>belum dilakukan</strong>.
