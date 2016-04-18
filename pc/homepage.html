@@ -7,6 +7,11 @@
 		<title>
 			<%BlogTitle%>
 		</title>
+
+		<!-- DEVELOPMENT 
+		<link rel="stylesheet" type="text/css" href="style.css">
+			 /DEVELOPMENT -->
+
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/icon.min.css">
 		<link rel="stylesheet" type="text/css" href="<%CSSUrl%>">
 		<meta name="description" content="<%BlogDescription%>">
@@ -83,7 +88,7 @@
 										<i class="user icon as wa-post__author-icon"></i>
 										<%EntryAuthor%>
 									</a>
-									<a class="ui label as wa-post__date and has tooltip" title="Published at <%EntryTime%>" href="#!">
+									<a class="ui label as wa-post__date and has tooltip" title="Published at <%EntryDate%> <%EntryTime%>" href="#!">
 										<i class="calendar icon as wa-post__date-icon"></i>
 										<%EntryDate%>
 									</a>
@@ -164,13 +169,14 @@
 				<i class="chevron up icon"></i>
 			</div>
 		</footer>
-		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/site.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/sticky.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/checkbox.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/transition.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/popup.min.js"></script>
+
 		<script>
 			$(document).ready(function() {
 				$('.has.tooltip').popup({
