@@ -79,11 +79,11 @@
 								</div>
 								<div class="ui hidden divider"></div>
 								<div class="wa-post__meta">
-									<a class="ui label as wa-post__author" href="#!" title="Published by <%EntryAuthor%>">
+									<a class="ui label as wa-post__author and has tooltip" href="#!" title="Published by <%EntryAuthor%>">
 										<i class="user icon as wa-post__author-icon"></i>
 										<%EntryAuthor%>
 									</a>
-									<a class="ui label as wa-post__date" title="Published at <%EntryTime%>" href="#!">
+									<a class="ui label as wa-post__date and has tooltip" title="Published at <%EntryTime%>" href="#!">
 										<i class="calendar icon as wa-post__date-icon"></i>
 										<%EntryDate%>
 									</a>
@@ -100,21 +100,55 @@
 								<div class="ui hidden divider"></div>
 								<div class="ui hidden divider"></div>
 								<div class="ui bottom attached label as wa-post__footer">
-									<div class="wa-post__action">
-										<IfEntryAllowComment>
-											<a href="<%EntryPermalink%>#comments" class="ui grey button as wa-post__readMore">
-												<%EntryCommentCount%> Komentar
+									<div class="ui stackable two column grid">
+										<div class="column">
+											<a class="ui icon tiny blue button as wa-post__share and has tooltip" href="https://www.facebook.com/sharer/sharer.php?u=<%BlogUrl%>e<%EntryId%>.html&t=<%EntryTitle%>" target="_blank" title="Bagikan ke Facebook">
+												<i class="facebook icon"></i>
 											</a>
-										</IfEntryAllowComment>
-										<IfEntryBodyMore>
-											<a href="<%EntryPermalink%>#more" class="ui grey button as wa-post__readMore">
-												Selengkapnya <i class="chevron right icon"></i>
+											<a class="ui icon tiny teal button as wa-post__share and has tooltip" href="https://twitter.com/intent/tweet?text=<%EntryTitle%>&url=<%BlogUrl%>e<%EntryId%>.html" target="_blank" title="Tweet">
+												<i class="twitter icon"></i>
 											</a>
-										</IfEntryBodyMore>
+											<a class="ui icon tiny red button as wa-post_share and has tooltip" href="https://plus.google.com/share?url=<%BlogUrl%>e<%EntryId%>.html" target="_blank" title="+1">
+												<i class="google plus icon"></i>
+											</a>
+											<a class="ui icon tiny blue button as wa-post__share and has tooltip" href="http://www.tumblr.com/share?v=3&u=<%BlogUrl%>e<%EntryId%>.html&t=<%EntryTitle%>&s=" target="_blank" title="Post ke Tumblr">
+												<i class="tumblr icon"></i>
+											</a>
+											<a class="ui icon tiny red button as wa-post_share and has tooltip" href="http://pinterest.com/pin/create/button/?url=<%BlogUrl%>e<%EntryId%>.html&description=<%EntryTitle%>" target="_blank" title="Pin">
+												<i class="pinterest icon"></i>
+											</a>
+										</div>
+										<div class="column">
+											<div class="wa-post__action">
+												<IfEntryAllowComment>
+													<a href="<%EntryPermalink%>#comments" class="ui grey button as wa-post__readMore">
+														<%EntryCommentCount%> Komentar
+													</a>
+												</IfEntryAllowComment>
+												<IfEntryBodyMore>
+													<a href="<%EntryPermalink%>#more" class="ui grey button as wa-post__readMore">
+														Baca <i class="chevron right icon"></i>
+													</a>
+												</IfEntryBodyMore>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
 						</IndexEntrysLoop>
+						<div class="ui hidden divider"></div>
+						<div class="ui two column grid">
+							<div class="column" align="left">
+								<IfNextPage>
+									<a href="<%NextPage%>" class="ui grey button" title="Halaman Selanjutnya"><i class="chevron left icon"></i> Selanjutnya</a>
+								</IfNextPage>
+							</div>
+							<div class="column" align="right">
+								<IfPrevPage>
+									<a href="<%PrevPage%>" class="ui grey button" title="Halaman Sebelumnya">Sebelumnya <i class="chevron right icon"></i></a>
+								</IfPrevPage>
+							</div>
+						</div>
 					</div>
 					<div class="sixteen wide mobile five wide tablet five wide computer column as wa-sidebar">
 						<%PluginList%>
@@ -130,14 +164,19 @@
 				<i class="chevron up icon"></i>
 			</div>
 		</footer>
+		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/site.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/sticky.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/checkbox.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/transition.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/popup.min.js"></script>
 		<script>
 			$(document).ready(function() {
-				$('*').popup();
+				$('.has.tooltip').popup({
+					inline: true,
+					hoverable: true
+				});
 				$('.ui.sticky').sticky({
 					context: 'body'
 				});
