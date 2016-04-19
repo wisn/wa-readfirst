@@ -1,6 +1,6 @@
 # Wagomu Template "Read First"
 
-"*Read Firs*t", template modern sederhana yang dikhususkan untuk kenyamanan membaca.
+"*Read Firs*t", template modern sederhana yang dikhususkan untuk kenyamanan membaca. Menggunakan komponen Semantic UI dan membuang yang tidak perlu.
 
 Versi *PC*
 ----------
@@ -35,12 +35,12 @@ Anda dapat memasang *template* ini langsung apabila telah terdaftar di Wagomu de
 
 Kontribusi
 ==========
-Saya sangat senang apabila Anda mau menyampaikan saran dan kritiknya melalui menu "*Issues*" di atas.
+Menemukan *bug* atau mau berkontribusi? Saya sangat senang apabila Anda mau menyampaikan saran, kritik, atau pun laporan *but* melalui menu "*Issues*" di atas.
 Jika Anda ingin mengembangkan *template* ini saya persilakan untuk *fork repository* ini, kemudian *pull request* kembali apabila Anda sudah selesai.
 
 Lebih Dekat
 ===========
 - Surel: mail[at]nurcahyo.id
-- Wagomu: apendix@wagomu.id
+- Wagomu: apendix.wagomu.id
 - Blog: blog.nurcahyo.id
 - Facebook: facebook.com/Wisn98
