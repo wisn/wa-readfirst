@@ -7,11 +7,6 @@
 		<title>
 			<%EntryTitle%>
 		</title>
-
-		<!-- DEVELOPMENT
-		<link rel="stylesheet" type="text/css" href="stylesheet.css">
-			/DEVELOPMENT -->
-
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/icon.min.css">
 		<link rel="stylesheet" type="text/css" href="<%CSSUrl%>">
 		<meta name="description" content="<%EntryExcerpt%>">
@@ -284,6 +279,7 @@
 					$('html,body').animate({scrollTop: 0}, 500);
 					return false;
 				});
+				$('.subscription').addClass('ui segment as wa-sidebar__body');
 				$('.category').addClass('ui segment as wa-sidebar__body');
 				$('.sitemap_category').addClass('ui segment as wa-sidebar__body');
 				$('.recententry').addClass('ui segment as wa-sidebar__body');

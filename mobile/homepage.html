@@ -7,11 +7,6 @@
 		<title>
 			<%BlogTitle%>
 		</title>
-
-		<!-- DEVELOPMENT
-		<link rel="stylesheet" type="text/css" href="stylesheet.css">
-			/DEVELOPMENT -->
-
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/icon.min.css">
 		<link rel="stylesheet" type="text/css" href="<%CSSUrl%>">
 		<meta name="description" content="<%BlogDescription%>">
@@ -92,7 +87,7 @@
 								</div>
 								<div class="ui divider"></div>
 								<div class="wa-post__content">
-									<%EntryBody%>
+									<%EntryBodyNoTag%>
 								</div>
 								<div class="ui hidden divider"></div>
 								<div class="wa-post__meta">
@@ -136,15 +131,13 @@
 											</a>
 										</div>
 										<div class="column" align="right">
-											<IfEntryBodyMore>
-												<div class="column">
-													<a href="<%EntryPermalink%>#more" class="ui tiny grey button as wa-post__readMore">
-														Baca <i class="chevron right icon"></i>
-													</a>
-												</div>
-												<div style="padding: 2px"></div>
-											</IfEntryBodyMore>
+											<div class="column">
+												<a href="<%EntryPermalink%>#more" class="ui tiny grey button as wa-post__readMore">
+													Baca <i class="chevron right icon"></i>
+												</a>
+											</div>
 											<IfEntryAllowComment>
+												<div style="padding: 2px"></div>
 												<div class="column">
 													<a href="<%EntryPermalink%>#comments" class="ui tiny grey button as wa-post__readMore">
 														<%EntryCommentCount%> Komentar

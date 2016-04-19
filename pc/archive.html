@@ -7,11 +7,6 @@
 		<title>
 			<%CategoryName%>
 		</title>
-
-		<!-- DEVELOPMENT
-		<link rel="stylesheet" type="text/css" href="stylesheet.css">
-			/DEVELOPMENT -->
-
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/icon.min.css">
 		<link rel="stylesheet" type="text/css" href="<%CSSUrl%>">		
 		<meta name="description" content="<%BlogDescription%>">
@@ -80,7 +75,7 @@
 								</div>
 								<div class="ui divider"></div>
 								<div class="wa-post__content">
-									<%EntryBody%>
+									<%EntryBodyNoTag%>
 								</div>
 								<div class="ui hidden divider"></div>
 								<div class="wa-post__meta">
@@ -130,11 +125,9 @@
 														<%EntryCommentCount%> Komentar
 													</a>
 												</IfEntryAllowComment>
-												<IfEntryBodyMore>
-													<a href="<%EntryPermalink%>#more" class="ui grey button as wa-post__readMore">
-														Baca <i class="chevron right icon"></i>
-													</a>
-												</IfEntryBodyMore>
+												<a href="<%EntryPermalink%>#more" class="ui grey button as wa-post__readMore">
+													Baca <i class="chevron right icon"></i>
+												</a>
 											</div>
 										</div>
 									</div>
@@ -190,6 +183,7 @@
 					$('html,body').animate({scrollTop: 0}, 500);
 					return false;
 				});
+				$('.subscription').addClass('ui segment as wa-sidebar__body');
 				$('.category').addClass('ui segment as wa-sidebar__body');
 				$('.sitemap_category').addClass('ui segment as wa-sidebar__body');
 				$('.recententry').addClass('ui segment as wa-sidebar__body');
