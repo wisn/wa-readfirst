@@ -1,32 +1,45 @@
-# Read First Template
+# Wagomu Template "Read First"
 
-Wagomu pada dasarnya telah memiliki banyak pilihan <i>template</i> yang dapat kita pilih. Namun, menurut pandangan saya kebanyakan <i>template</i> yang ada telah tertinggal jauh apabila melihat tren yang ada saat ini. Karena itu, saya mencoba membuat salah satu <i>template</i> yang dapat dipakai untuk mengimbangi tren saat ini. Pada template ini, saya gunakan <i>framework</i> <i>CSS</i> bernama <i>Semantic UI</i>. Apa saja keunggulan dari <i>template</i> ini?
+"*Read Firs*t", template modern sederhana yang dikhususkan untuk kenyamanan membaca. Menggunakan komponen Semantic UI dan membuang yang tidak perlu.
 
-Sederhana
----------
-Sesuai namanya, <i>template</i> ini dikhususkan untuk memanjakan mata para pengguna dalam membaca. <i>Template</i> ini berfokus ke konten. Karena itu, tampilannya begitu sederhana namun segar dipandang.
-
-Ringan
-------
-<i>Template</i> ini hanya menggunakan apa yang digunakannya dan membuang apa yang tidak digunakan. Intinya, <i>template</i> ini hanya menggunakan komponen tertentu dari <i>Semantic UI</i> yang dipakai dan membuang yang tidak perlu. Karena yang satu ini memerlukan optimasi dengan <i>CSS</i> dan <i>JavaScript</i> yang ada, sehingga di tahap awal ini belum terlaksana.
-
-Fokus untuk Membaca
--------------------
-<i>Template</i> ini berusaha membuat para pembacanya nyaman. Karena itu, <i>template</i> ini menyingkirkan yang tidak perlu di saat pengguna membaca sebuah artikel. Selain itu, <i>typography</i> yang digunakan begitu segar di mata.
-
-Sesuai Standar
+Versi *PC*
+----------
+Semua dokumen yang diperlukan untuk *style sheet*, halaman utama, artikel terpisah, dan arsip ada di dalam:
+```
+- pc/stylesheet.css
+- pc/homepage.html
+- pc/article.html
+- pc/archive.html
+```
+Versi *Mobile*
 --------------
-<i>Template</i> ini disusun berdasarkan standar yang ada saat ini. Menggunakan <i>HTML5</i>, <i>CSS3</i>, dan <i>JavaScript</i> sehingga lebih interaktif. Penamaan <i>class</i> untuk masing-masing komponennya dibuat sedemikian rupa sehingga mudah untuk melakukan kustomasi <i>CSS</i>.
+Semua dokumen yang diperlukan untuk *style sheet*, halaman utama, artikel terpisah, dan arsip ada di dalam:
+```
+- mobile/stylesheet.css
+- mobile/homepage.html
+- mobile/article.html
+- mobile/archive.html
+```
 
-Untuk saat ini, kira-kira gambaran umum untuk <i>template</i> ini seperti di atas. Karena, saat ini <i>template</i> dalam tahap pengembangan. Setelah semua komponen selesai, berikutnya adalah optimasi agar <i>template</i> ini ringan dan responsif sehingga dapat digunakan di berbagai macam platform. Untuk perhatiannya saya mengucapkan terima kasih.
+Panduan Memasang
+================
+Anda dapat memasang *template* ini langsung apabila telah terdaftar di Wagomu dengan memilihnya. Apabila *template* ini belum terdaftar di Wagomu, silakan login terlebih dahulu ke http://wagomu.id/ kemudian ikuti langkah di bawah ini:
+- Buka http://admin.wagomu.id/admin/template
+- Sunting salah satu template yang digunakan dengan membuka "customize"
+- Salin dan tempel kode dari *template* ini ke masing-masing kotak
+- stylesheet.css salin ke kotak "Style Sheet"
+- homepage.html salin ke kotak "Halaman Utama"
+- article.html salin ke kotak "Artikel Terpisah"
+- archive.html salin ke kotak "Arsip"
+- Tekan "Daftar" lalu pilih "OK"
 
-Informasi Template
-------------------
-- Nama <i>template</i> "<strong></strong><i><strong>Read First</strong></i>".
-- Status pengembangan <strong>berjalan</strong>.
-- Halaman yang rampung 100% <strong>belum ada</strong>.
-- Saat ini tengah mengerjakan <strong>halaman utama</strong>.
-- Optimasi <strong>belum dilakukan</strong>.
-- Interaktif dan responsif <strong>belum sempurna</strong>.
-- Versi <i>template</i> <strong>belum ada</strong>.
-- Rilis terakhir <strong>belum dilakukan</strong>.
+Kontribusi
+==========
+Menemukan *bug* atau mau berkontribusi? Saya sangat senang apabila Anda mau menyampaikan saran, kritik, atau pun laporan *but* melalui menu "*Issues*" di atas.
+Jika Anda ingin mengembangkan *template* ini saya persilakan untuk *fork repository* ini, kemudian *pull request* kembali apabila Anda sudah selesai.
+
+Lebih Dekat
+===========
+- Surel: mail[at]nurcahyo.id
+- Wagomu: http://apendix.wagomu.id/
+- Facebook: https://facebook.com/Wisn98
