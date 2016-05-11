@@ -123,6 +123,9 @@ div.recententry_img .sidebody {
   margin-top: -1em;
   text-align: right; }
 
+div.search {
+  display: none; }
+
 .wa-sidebar__body,
 div.calender,
 .subscription,
@@ -174,14 +177,16 @@ div.calender,
 .calendard.sun {
   color: #FF0000; }
 
-ul.rss li a {
-  color: #FFF; }
-
 .rss {
   display: block;
   text-align: center; }
 
 .rss li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.rss li a {
   cursor: pointer;
   display: inline-block;
   min-height: 1em;
@@ -213,7 +218,7 @@ ul.rss li a {
   will-change: '';
   -webkit-tap-highlight-color: transparent; }
 
-.rss li:hover {
+.rss li a:hover {
   background-color: #f26202;
   color: #fff;
   text-shadow: none; }
