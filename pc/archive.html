@@ -1,215 +1,190 @@
 <!DOCTYPE html>
 <html lang="id">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="X-UA-Compatible" content="IE=edge, chrome=1">
-		<title>
-			<%CategoryName%>
-		</title>
-		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/icon.min.css">
-		<link rel="stylesheet" type="text/css" href="<%CSSUrl%>">		
-		<meta name="description" content="<%BlogDescription%>">
-		<meta name="author" content="<%ProfileName%>">
-		<link rel="alternate" type="application/rss+xml" title="RSS" href="<%RDFUrl%>">
-  		<link rel="EditURI" type="application/rsd+xml" title="RSD" href="<%RSDUrl%>">
-  		<link rel="contents" href="<%SiteMapUrl%>">  		
-	</head>
-	<body>
-		<header>
-			<div class="ui container as wa-page">
-				<div class="wa-header">
-					<a href="<%BlogUrl%>">
-						<img class="ui left floated tiny avatar image as wa-header__avatar" alt="Avatar" src="<%ProfileImage%>">
-					</a>
-					<h1 class="ui medium header as wa-header__body">
-						<a href="<%BlogUrl%>" class="wa-header__title">
-							<%BlogTitle%>
-						</a>
-						<div class="sub header as wa-header__description">
-							<%BlogDescription%>
-						</div>
-					</h1>
-				</div>
-			</div>
-			<div class="ui sticky wa-menu">
-				<div class="ui large secondary pointing menu as wa-menu__primary">
-					<div class="ui container as wa-menu__body">
-						<a class="item as wa-menu__item" href="<%BlogUrl%>">
-							Beranda
-						</a>
-						<a class="item as wa-menu__item" href="<%BlogUrl%>album.html">
-							Album
-						</a>
-						<a class="item as wa-menu__item" href="<%BlogUrl%>sitemap.html">
-							Peta Situs
-						</a>
-						<div class="right menu as wa-menu__right">
-							<div class="item as wa-search and wa-menu__item">
-								<div class="ui transparent icon input as wa-search__body">
-									<form method="get" action="/search.php">
-										<input name="search" placeholder="Cari..." type="text" maxlength="255" class="wa-search__input">
-									</form>
-									<i class="search icon as wa-search__icon"></i>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
-		<main>
-			<div class="ui hidden divider"></div>
-			<div class="ui container as wa-main">
-				<div class="ui stackable two column grid as wa-main__posts">
-					<div class="sixteen wide mobile eleven wide tablet eleven wide computer column as wa-post">
-						<EntrysLoop>
-							<%TrackBackAutoDiscovery%>
-							<div class="ui segment as wa-post__body">
-								<div class="ui header as wa-post__header">
-									<h1 class="wa-post__title">
-										<a href="<%EntryPermalink%>">
-											<%EntryTitle%>
-										</a>
-									</h1>
-								</div>
-								<div class="ui divider"></div>
-								<div class="wa-post__content">
-									<%EntryBodyNoTag%>
-								</div>
-								<div class="ui hidden divider"></div>
-								<div class="wa-post__meta">
-									<a class="ui label as wa-post__author" href="#!" title="Published by <%EntryAuthor%>">
-										<i class="user icon as wa-post__author-icon"></i>
-										<%EntryAuthor%>
-									</a>
-									<a class="ui label as wa-post__date" title="Published at <%EntryDate%> <%EntryTime%>" href="#!">
-										<i class="calendar icon as wa-post__date-icon"></i>
-										<%EntryDate%>
-									</a>
-									<IfEntryCategory>
-										<a class="ui label as wa-post__category" href="<%EntryCategoryUrl%>">
-											<i class="folder icon as wa-post__category-icon"></i>
-											<%EntryCategory%>
-										</a>
-									</IfEntryCategory>
-								</div>
-								<div class="ui hidden divider"></div>
-								<div class="ui hidden divider"></div>
-								<div class="ui hidden divider"></div>
-								<div class="ui bottom attached label as wa-post__footer">
-									<div class="ui stackable two column grid">
-										<div class="column">
-											<a class="ui icon tiny blue button as wa-post__share and has tooltip" href="https://www.facebook.com/sharer/sharer.php?u=<%BlogUrl%>e<%EntryId%>.html&t=<%EntryTitle%>" target="_blank" title="Bagikan ke Facebook">
-												<i class="facebook icon"></i>
-											</a>
-											<a class="ui icon tiny teal button as wa-post__share and has tooltip" href="https://twitter.com/intent/tweet?text=<%EntryTitle%>&url=<%BlogUrl%>e<%EntryId%>.html" target="_blank" title="Tweet">
-												<i class="twitter icon"></i>
-											</a>
-											<a class="ui icon tiny red button as wa-post_share and has tooltip" href="https://plus.google.com/share?url=<%BlogUrl%>e<%EntryId%>.html" target="_blank" title="+1">
-												<i class="google plus icon"></i>
-											</a>
-											<a class="ui icon tiny blue button as wa-post__share and has tooltip" href="http://www.tumblr.com/share?v=3&u=<%BlogUrl%>e<%EntryId%>.html&t=<%EntryTitle%>&s=" target="_blank" title="Post ke Tumblr">
-												<i class="tumblr icon"></i>
-											</a>
-											<a class="ui icon tiny red button as wa-post_share and has tooltip" href="http://pinterest.com/pin/create/button/?url=<%BlogUrl%>e<%EntryId%>.html&description=<%EntryTitle%>" target="_blank" title="Pin">
-												<i class="pinterest icon"></i>
-											</a>
-										</div>
-										<div class="column">
-											<div class="wa-post__action">
-												<IfEntryAllowComment>
-													<a href="<%EntryPermalink%>#comments" class="ui grey button as wa-post__readMore">
-														<%EntryCommentCount%> Komentar
-													</a>
-												</IfEntryAllowComment>
-												<a href="<%EntryPermalink%>#more" class="ui grey button as wa-post__readMore">
-													Baca <i class="chevron right icon"></i>
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</EntrysLoop>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="X-UA-Compatible" content="IE=edge, chrome=1">
+    <title>
+      <%CategoryName%>
+    </title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/icon.min.css">
+    <link rel="stylesheet" type="text/css" href="<%CSSUrl%>">   
+    <meta name="description" content="<%BlogDescription%>">
+    <meta name="author" content="<%ProfileName%>">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="<%RDFUrl%>">
+      <link rel="EditURI" type="application/rsd+xml" title="RSD" href="<%RSDUrl%>">
+      <link rel="contents" href="<%SiteMapUrl%>">     
+  </head>
+  <body>
+    <header>
+      <div class="ui container as wa-page">
+        <div class="wa-header">
+          <a href="<%BlogUrl%>">
+            <img class="ui left floated tiny avatar image as wa-header__avatar" alt="Avatar" src="<%ProfileImage%>">
+          </a>
+          <h1 class="ui medium header as wa-header__body">
+            <a href="<%BlogUrl%>" class="wa-header__title">
+              <%BlogTitle%>
+            </a>
+            <div class="sub header as wa-header__description">
+              <%BlogDescription%>
+            </div>
+          </h1>
+        </div>
+      </div>
+      <div class="ui sticky wa-menu">
+        <div class="ui large secondary pointing menu as wa-menu__primary">
+          <div class="ui container as wa-menu__body">
+            <a class="item as wa-menu__item" href="<%BlogUrl%>">
+              Beranda
+            </a>
+            <a class="item as wa-menu__item" href="<%BlogUrl%>album.html">
+              Album
+            </a>
+            <a class="item as wa-menu__item" href="<%BlogUrl%>sitemap.html">
+              Peta Situs
+            </a>
+            <div class="right menu as wa-menu__right">
+              <div class="item as wa-search and wa-menu__item">
+                <div class="ui transparent icon input as wa-search__body">
+                  <form method="get" action="/search.php">
+                    <input name="search" placeholder="Cari..." type="text" maxlength="255" class="wa-search__input">
+                  </form>
+                  <i class="search icon as wa-search__icon"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="ui hidden divider"></div>
+      <div class="ui container as wa-main">
+        <div class="ui stackable two column grid as wa-main__posts">
+          <div class="sixteen wide mobile eleven wide tablet eleven wide computer column as wa-post">
+            <EntrysLoop>
+              <%TrackBackAutoDiscovery%>
+              <div class="ui segment as wa-post__body">
+                <a href="<%EntryPermalink%>">
+                  <img src="<%EntryImgOriginal%>" class="wa-post__cover-img">
+                </a>
+                <div class="ui header as wa-post__header">
+                  <h1 class="wa-post__title">
+                    <a href="<%EntryPermalink%>">
+                      <%EntryTitle%>
+                    </a>
+                  </h1>
+                </div>
+                <div class="ui divider"></div>
+                <div class="wa-post__content">
+                  <%EntryBodyNoTag%>
+                </div>
+                <div class="ui hidden divider"></div>
+                <div class="wa-post__meta">
+                  <a class="ui label as wa-post__author" href="#!" title="Published by <%EntryAuthor%>">
+                    <i class="user icon as wa-post__author-icon"></i>
+                    <%EntryAuthor%>
+                  </a>
+                  <a class="ui label as wa-post__date" title="Published at <%EntryDate%> <%EntryTime%>" href="#!">
+                    <i class="calendar icon as wa-post__date-icon"></i>
+                    <%EntryDate%>
+                  </a>
+                  <IfEntryCategory>
+                    <a class="ui label as wa-post__category" href="<%EntryCategoryUrl%>">
+                      <i class="folder icon as wa-post__category-icon"></i>
+                      <%EntryCategory%>
+                    </a>
+                  </IfEntryCategory>
+                </div>
+                <div class="ui hidden divider"></div>
+                <div class="ui hidden divider"></div>
+                <div class="ui hidden divider"></div>
+                <div class="ui bottom attached label as wa-post__footer">
+                  <div class="ui stackable two column grid">
+                    <div class="column">
+                      <a class="ui icon tiny blue button as wa-post__share and has tooltip" href="https://www.facebook.com/sharer/sharer.php?u=<%BlogUrl%>e<%EntryId%>.html&t=<%EntryTitle%>" target="_blank" title="Bagikan ke Facebook">
+                        <i class="facebook icon"></i>
+                      </a>
+                      <a class="ui icon tiny teal button as wa-post__share and has tooltip" href="https://twitter.com/intent/tweet?text=<%EntryTitle%>&url=<%BlogUrl%>e<%EntryId%>.html" target="_blank" title="Tweet">
+                        <i class="twitter icon"></i>
+                      </a>
+                      <a class="ui icon tiny red button as wa-post_share and has tooltip" href="https://plus.google.com/share?url=<%BlogUrl%>e<%EntryId%>.html" target="_blank" title="+1">
+                        <i class="google plus icon"></i>
+                      </a>
+                      <a class="ui icon tiny blue button as wa-post__share and has tooltip" href="http://www.tumblr.com/share?v=3&u=<%BlogUrl%>e<%EntryId%>.html&t=<%EntryTitle%>&s=" target="_blank" title="Post ke Tumblr">
+                        <i class="tumblr icon"></i>
+                      </a>
+                      <a class="ui icon tiny red button as wa-post_share and has tooltip" href="http://pinterest.com/pin/create/button/?url=<%BlogUrl%>e<%EntryId%>.html&description=<%EntryTitle%>" target="_blank" title="Pin">
+                        <i class="pinterest icon"></i>
+                      </a>
+                    </div>
+                    <div class="column">
+                      <div class="wa-post__action">
+                        <IfEntryAllowComment>
+                          <a href="<%EntryPermalink%>#comments" class="ui grey button as wa-post__readMore">
+                            <%EntryCommentCount%> Komentar
+                          </a>
+                        </IfEntryAllowComment>
+                        <a href="<%EntryPermalink%>#more" class="ui grey button as wa-post__readMore">
+                          Baca <i class="chevron right icon"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </EntrysLoop>
 
-						<div class="ui hidden divider"></div>
-						<div class="ui two column grid">
-							<div class="column" align="left">
-								<IfNextPage>
-									<a href="<%NextPage%>" class="ui grey button" title="Halaman Selanjutnya"><i class="chevron left icon"></i> Selanjutnya</a>
-								</IfNextPage>
-							</div>
-							<div class="column" align="right">
-								<IfPrevPage>
-									<a href="<%PrevPage%>" class="ui grey button" title="Halaman Sebelumnya">Sebelumnya <i class="chevron right icon"></i></a>
-								</IfPrevPage>
-							</div>
-						</div>
-					</div>
-					<div class="sixteen wide mobile five wide tablet five wide computer column as wa-sidebar">
-						<%PluginList%>
-					</div>
-				</div>
-			</div>
-		</main>
-		<footer>
-			<div class="ui container as wa-footer">
-				&copy; 2016, <%BlogTitle%>. All right reserved. Template "Read First" by <a href="https://github.com/wisn/" target="_blank">Wisnu Adi Nurcahyo</a>. Powered by <a href="http://www.wagomu.id/" target="_blank">Wagomu</a>.
-			</div>
-			<div class="to top" title="To top">
-				<i class="chevron up icon"></i>
-			</div>
-		</footer>
+            <div class="ui hidden divider"></div>
+            <div class="ui two column grid">
+              <div class="column" align="left">
+                <IfNextPage>
+                  <a href="<%NextPage%>" class="ui grey button" title="Halaman Selanjutnya"><i class="chevron left icon"></i> Selanjutnya</a>
+                </IfNextPage>
+              </div>
+              <div class="column" align="right">
+                <IfPrevPage>
+                  <a href="<%PrevPage%>" class="ui grey button" title="Halaman Sebelumnya">Sebelumnya <i class="chevron right icon"></i></a>
+                </IfPrevPage>
+              </div>
+            </div>
+          </div>
+          <div class="sixteen wide mobile five wide tablet five wide computer column as wa-sidebar">
+            <%PluginList%>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="ui container as wa-footer">
+        &copy; 2016, <%BlogTitle%>. All right reserved. Template "Read First" by <a href="https://github.com/wisn/" target="_blank">Wisnu Adi Nurcahyo</a>. Powered by <a href="http://www.wagomu.id/" target="_blank">WaGoMu</a>.
+      </div>
+      <div class="to top" title="To top">
+        <i class="chevron up icon"></i>
+      </div>
+    </footer>
 
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/site.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/sticky.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/transition.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/popup.min.js"></script>
-		
-		<script>
-			$(document).ready(function() {
-				$('.has.tooltip').popup({
-					inline: true,
-					hoverable: true
-				});
-				$('.ui.sticky').sticky({
-					context: 'body'
-				});
-				$('.to.top').click(function() {
-					$('html,body').animate({scrollTop: 0}, 500);
-					return false;
-				});
-				$('.subscription').addClass('ui segment as wa-sidebar__body');
-				$('.category').addClass('ui segment as wa-sidebar__body');
-				$('.sitemap_category').addClass('ui segment as wa-sidebar__body');
-				$('.recententry').addClass('ui segment as wa-sidebar__body');
-				$('.qrcode').addClass('ui segment as wa-sidebar__body');
-				$('ul.rss li a').css({
-					color: '#FFF'
-				});
-				$('.rss').css({
-					display: 'block',
-					'text-align': 'center'
-				});
-				$('.rss li').addClass('ui large orange button');
-				$('.ad').addClass('ui segment as wa-sidebar__body');
-				$('.profile').addClass('ui segment as wa-sidebar__body');
-				$('.profile .photo').addClass('ui circular image').css({
-					display: 'block',
-					'text-align': 'center'
-				});
-				$('.profile .photo img').css({display: 'block', margin: 'auto'});
-				$('.profile .nickname').css({
-					'text-align': 'center',
-					'font-size': '1.25em',
-					padding: '1em 0em'
-				});
-				$('.inquiry').addClass('ui segment as wa-sidebar__body');
-				$('.sidetitle').addClass('wa-sidebar__title');
-				$('.side').addClass('wa-sidebar__content');
-			});
-		</script>
-	</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/site.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/sticky.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/transition.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/popup.min.js"></script>
+    
+    <script>
+      $(document).ready(function() {
+        $('.has.tooltip').popup({
+          inline: true,
+          hoverable: true
+        });
+        $('.ui.sticky').sticky({
+          context: 'body'
+        });
+        $('.to.top').click(function() {
+          $('html,body').animate({scrollTop: 0}, 500);
+          return false;
+        });
+      });
+    </script>
+  </body>
 </html>
