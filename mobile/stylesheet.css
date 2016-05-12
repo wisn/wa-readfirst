@@ -5,8 +5,8 @@
  * ----------------------------------------------------------------------
  * @package     Read Frist
  * @author      Wisnu Adi Nurcahyo <mail@nurcahyo.id>
- * @repository 	https://github.com/wisn/wa-readfirst/ 
- * @info         http://apendix.wagomu.id/
+ * @repository  https://github.com/wisn/wa-readfirst/ 
+ * @info        http://nurcahyo.wagomu.id/
  */
 
  /* Semantic UI needed Component */
@@ -34,116 +34,206 @@
 
 /* Read First Part */
 body {
-	cursor: default;
-	background: #EFEFEF;
-	color: #222;
-	font-size: 12px;
-}
+  cursor: default;
+  background: #EFEFEF;
+  color: #222;
+  font-size: 12px; }
+
 header {
-	background: #DDD;
-	color: #222;
-}
+  background: #DDD;
+  color: #222; }
+
 .wa-header {
-	padding: 2em 0em;
-}
+  padding: 2em 0em; }
+
 .wa-header a,
 .wa-header a:hover {
-	color: #222;
-	text-decoration: none;
-}
+  color: #222;
+  text-decoration: none; }
+
+.ui.medium.header.as.wa-header__body {
+  margin: 0 0 1rem; }
+
 .wa-header__title {
-	font-size: 14px;
-}
+  font-size: 14px; }
+
 h1.ui.header .wa-header__description.as.sub.header {
-	font-size: 12px;
-}
+  font-size: 12px; }
+
 .wa-menu {
-	display: block;
-	padding: 0em;
-}
+  display: block;
+  padding: 0em; }
+
 .wa-menu__primary.ui.secondary.pointing.menu {
-	background: #CCC;
-	font-size: 13px;
-}
+  background: #CCC;
+  font-size: 13px; }
+
 .wa-menu__primary.ui.secondary.pointing.menu a:hover,
 .wa-menu__primary.ui.secondary.pointing.menu a:focus {
-	border-bottom: 0.125em solid #222;
-}
-.wa-menu__primary.ui.secondary.pointing.menu .wa-search.item {
-	display: inline-block;
-	margin-top: -0.225em;
-	border-bottom: 2px solid #999;
-}
-.wa-menu__primary.ui.large.secondary.pointing.menu.fixed.top {
-	margin-top: 2em;
-}
-.wa-menu__primary:last-child.ui.secondary.pointing.menu {
-	display: none;
-	background: #CCC;
-	margin-top: 0px;
-}
-.item.as.wa-search.and.wa-menu__item {
-	width: 85%;
-}
-.item.as.wa-search.and.wa-menu__item form,
-.item.as.wa-search.and.wa-menu__item input {
-	width: 100%;
-}
-main {
-	min-height: 100vh;
-}
-.wa-main {
+  border-bottom: 0.125em solid #222; }
 
-}
+.wa-menu__primary.ui.large.secondary.pointing.menu.fixed.top {
+  margin-top: 2em; }
+
+.wa-search {
+  display: block;
+  position: relative;
+  width: 100%;
+  background: #FFF;
+  box-shadow: 0 1px 2px 0 rgba(34,36,38,.15);
+  margin: 1rem 0;
+  padding: 1em;
+  border-radius: .28571429rem;
+  border: 1px solid rgba(34,36,38,.15); }
+
+.wa-search form,
+.wa-search input {
+  width: 100%;
+  color: #222; }
+
+main {
+  min-height: 100vh; }
+
+img.ui.left.floated.tiny.avatar.image.as.wa-header__avatar[src=""],
+img.ui.left.floated.tiny.avatar.image.as.wa-header__avatar[src="/template/img/no_profile.png"] {
+  display: none; }
+
+.wa-main {
+   }
+
+.wa-post__body img {
+  max-width: 100%; }
+
+.wa-post__body img.wa-post__cover-img {
+  display: block;
+  margin: 0 auto 8px;
+  height: 150px;
+  width: 100%; }
+
+.wa-post__body img.wa-post__cover-img[src="http://www.wagomu.id/img/no_entry_image.jpg"] {
+  display: none;
+  margin: 0;
+  height: 0; }
+
+.ui.header.as.wa-post__header {
+  margin: 0 0 1rem; }
+
 h1.wa-post__title {
-	font-size: 14px;
-}
+  font-size: 14px; }
+
 .wa-post__content {
-	font-size: 12px;
-}
+  font-size: 12px; }
+
 .wa-post__title a,
 .wa-post__title a:hover {
-	color: #222;
-	text-decoration: none;
-}
-.wa-post__action {
-	text-align: right;
-}
-.wa-post__meta {
-	color: #555;
-}
-.wa-post__meta .label {
-	font-size: 10px;
-}
-.ui.label.wa-post__share > i.icon {
-	margin: 0;
-}
-.wa-comments__form-email {
-	display: none;
-}
-.wa-sidebar__menu {
-	margin-top: -1em;
-	text-align: right;
-}
-.wa-sidebar__title {
-	font-size: 1.25em;
-	border-bottom: 1px solid #DDD;
-	padding: 0em 0em .25em;
-	margin: 0em 0em .5em;
-}
-footer {
-	margin: 2em 0em 0.25em;
-}
-.to.top {
-	position: fixed;
-	right: 0;
-	bottom: 0;
-	background: #AAA;
-	color: #222;
-	padding: 1em .9em 1em 1em;
-	cursor: pointer;
-}
+  color: #222;
+  text-decoration: none; }
 
-/* Your CSS code here! */
+.wa-post__action {
+  text-align: right; }
+
+.wa-post__meta {
+  color: #555; }
+
+.wa-post__meta .label {
+  font-size: 10px; }
+
+.ui.label.wa-post__share > i.icon {
+  margin: 0; }
+
+.wa-comments__form-email {
+  display: none; }
+
+.wa-comments__form .comments-body {
+  cursor: default;
+  display: block;
+  min-height: 1em;
+  width: 100%;
+  outline: 0;
+  border: none;
+  vertical-align: baseline;
+  background: #e0e1e2;
+  color: rgba(0,0,0,.6);
+  font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+  margin: 0 .25em 0 0;
+  padding: .78571429em 1.5em;
+  opacity: .45 !important;
+  background-image: none !important;
+  text-transform: none;
+  text-shadow: none;
+  font-weight: 700;
+  line-height: 1em;
+  font-style: normal;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  border-radius: .28571429rem;
+  box-shadow: none !important;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: opacity .1s ease,background-color .1s ease,color .1s ease,box-shadow .1s ease,background .1s ease;
+  transition: opacity .1s ease,background-color .1s ease,color .1s ease,box-shadow .1s ease,background .1s ease;
+  will-change: '';
+  -webkit-tap-highlight-color: transparent; }
+
+.wa-sidebar__menu {
+  margin-top: -1em;
+  text-align: right; }
+
+.wa-sidebar__title {
+  font-size: 1.25em;
+  border-bottom: 1px solid #DDD;
+  padding: 0em 0em .25em;
+  margin: 0em 0em .5em; }
+
+footer {
+  margin: 2em 0em 0.25em; }
+
+.to.top {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background: #AAA;
+  color: #222;
+  padding: .5em .4em .5em .5em;
+  cursor: pointer; }
+
+/* Your custom CSS code here! */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
