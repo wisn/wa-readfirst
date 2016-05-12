@@ -47,6 +47,9 @@ header {
 .wa-header {
   padding: 2em 0em 0em; }
 
+h1.ui.medium.header.as.wa-header__body {
+  margin: 1em 0 1rem; }
+
 .wa-header a,
 .wa-header a:hover {
   color: #222;
