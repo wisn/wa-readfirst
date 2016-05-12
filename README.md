@@ -41,5 +41,5 @@ Jika Anda ingin mengembangkan *template* ini saya persilakan untuk *fork reposit
 Lebih Dekat
 ===========
 - Surel: mail[at]nurcahyo.id
-- Wagomu: http://apendix.wagomu.id/
-- Facebook: https://facebook.com/Wisn98
+- Wagomu: http://nurcahyo.wagomu.id/
+- Facebook: https://facebook.com/WisnuAdiNurcahyo/
