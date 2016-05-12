@@ -6,7 +6,7 @@
  * @package     Read Frist
  * @author      Wisnu Adi Nurcahyo <mail@nurcahyo.id>
  * @repository  https://github.com/wisn/wa-readfirst/ 
- * @info         http://apendix.wagomu.id/
+ * @info        http://nurcahyo.wagomu.id/
  */
 
  /* Semantic UI needed Component */
@@ -79,6 +79,7 @@ header {
 main {
   min-height: 100vh; }
 
+img.ui.left.floated.tiny.avatar.image.as.wa-header__avatar[src=""],
 img.ui.left.floated.tiny.avatar.image.as.wa-header__avatar[src="/template/img/no_profile.png"] {
   display: none; }
 
